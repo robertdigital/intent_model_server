@@ -3,7 +3,7 @@ import models
 import time
 
 app = flask.Flask(__name__)
-intent_bert = models.IntentBert(weights="model.h5", debug=True)
+intent_bert = models.IntentBert(weights="bert_intent.h5", debug=True)
 
 
 @app.route("/predict", methods=["POST"])

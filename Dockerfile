@@ -1,8 +1,8 @@
-FROM nvcr.io/nvidia/tensorflow:19.12-tf2-py3
+FROM nvaitc/ai-lab:19.11-batch-tf2
 
 LABEL maintainer="Timothy Liu <timothyl@nvidia.com>"
 
-USER root
+USER 1000
 
 ENV DEBIAN_FRONTEND=noninteractive
 
